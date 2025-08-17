@@ -9,7 +9,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig((config) => {
-  const isProduction = config.mode === 'production' || process.env.NODE_ENV === 'production';
+  const isProduction = true;
   const isBuild = config.command === 'build';
   const skipCloudflareProxy = true;
 
