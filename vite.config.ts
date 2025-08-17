@@ -15,7 +15,7 @@ export default defineConfig((config) => {
 
   return {
     define: {
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || config.mode),
+      'process.env.NODE_ENV': "production",
     },
     build: {
       target: 'esnext',
