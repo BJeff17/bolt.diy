@@ -11,7 +11,7 @@ dotenv.config();
 export default defineConfig((config) => {
   const isProduction = config.mode === 'production' || process.env.NODE_ENV === 'production';
   const isBuild = config.command === 'build';
-  const skipCloudflareProxy = falsed;
+  const skipCloudflareProxy = true;
 
   return {
     define: {
